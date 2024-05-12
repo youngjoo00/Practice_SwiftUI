@@ -33,6 +33,8 @@
 		8EDF990A2BF0DE78008E3085 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF99092BF0DE78008E3085 /* ChartView.swift */; };
 		8EDF990C2BF0DE8B008E3085 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF990B2BF0DE8B008E3085 /* ChartViewModel.swift */; };
 		8EDF990F2BF0DFB9008E3085 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF990E2BF0DFB9008E3085 /* WebSocketManager.swift */; };
+		8EDF99122BF10542008E3085 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF99112BF10542008E3085 /* BarcodeScannerView.swift */; };
+		8EDF991E2BF10D98008E3085 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF991D2BF10D98008E3085 /* ScannerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		8EDF99092BF0DE78008E3085 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		8EDF990B2BF0DE8B008E3085 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 		8EDF990E2BF0DFB9008E3085 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		8EDF99112BF10542008E3085 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		8EDF991D2BF10D98008E3085 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		8E3ECFF32BEDE7DB005C4D7F /* Practice_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8EDF991F2BF11229008E3085 /* Appetizers */,
+				8EDF99102BF10529008E3085 /* BarcodeScanner */,
 				8EDF98F12BF0D5EE008E3085 /* Coin */,
 				8EDF98E32BEFAD2A008E3085 /* Practice3 */,
 				8EDF98B32BEF74B9008E3085 /* Practice2 */,
@@ -301,6 +307,30 @@
 			path = WebSocket;
 			sourceTree = "<group>";
 		};
+		8EDF99102BF10529008E3085 /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				8EDF991C2BF10D6A008E3085 /* Scenes */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		8EDF991C2BF10D6A008E3085 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8EDF99112BF10542008E3085 /* BarcodeScannerView.swift */,
+				8EDF991D2BF10D98008E3085 /* ScannerVC.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8EDF991F2BF11229008E3085 /* Appetizers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Appetizers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -381,6 +411,8 @@
 				8EDF990A2BF0DE78008E3085 /* ChartView.swift in Sources */,
 				8EDF990C2BF0DE8B008E3085 /* ChartViewModel.swift in Sources */,
 				8EDF98EF2BEFAF97008E3085 /* FrameworkListDetailView.swift in Sources */,
+				8EDF99122BF10542008E3085 /* BarcodeScannerView.swift in Sources */,
+				8EDF991E2BF10D98008E3085 /* ScannerVC.swift in Sources */,
 				8EDF98B52BEF74FC008E3085 /* Framework.swift in Sources */,
 				8EDF990F2BF0DFB9008E3085 /* WebSocketManager.swift in Sources */,
 				8EDF98B92BEF7ECB008E3085 /* FrameworkDetailView.swift in Sources */,
@@ -531,6 +563,8 @@
 				DEVELOPMENT_TEAM = N63SBJ4UPF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "바코드 스캐너를 사용하기 위해 카메라 접근 권한이 필요합니다";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -564,6 +598,8 @@
 				DEVELOPMENT_TEAM = N63SBJ4UPF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "바코드 스캐너를 사용하기 위해 카메라 접근 권한이 필요합니다";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

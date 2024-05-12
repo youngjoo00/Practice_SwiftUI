@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChartView: View {
     
-    @StateObject var viewModel = ChartViewModel()
+    @StateObject private var viewModel = ChartViewModel()
     
     var body: some View {
         ScrollView {
