@@ -11,6 +11,9 @@
 		8E3ECFF72BEDE7DB005C4D7F /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3ECFF62BEDE7DB005C4D7F /* WeatherView.swift */; };
 		8E3ECFF92BEDE7DD005C4D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3ECFF82BEDE7DD005C4D7F /* Assets.xcassets */; };
 		8E3ECFFC2BEDE7DD005C4D7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3ECFFB2BEDE7DD005C4D7F /* Preview Assets.xcassets */; };
+		8E9D49B02BF8FF9900996B6C /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49AF2BF8FF9900996B6C /* CounterView.swift */; };
+		8E9D49B22BF8FFA100996B6C /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49B12BF8FFA100996B6C /* CounterFeature.swift */; };
+		8E9D49B52BF8FFD800996B6C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9D49B42BF8FFD800996B6C /* ComposableArchitecture */; };
 		8EDF98B22BEDFCD2008E3085 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF98B12BEDFCD2008E3085 /* WeatherButton.swift */; };
 		8EDF98B52BEF74FC008E3085 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF98B42BEF74FC008E3085 /* Framework.swift */; };
 		8EDF98B72BEF76B1008E3085 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF98B62BEF76B1008E3085 /* FrameworkGridView.swift */; };
@@ -35,6 +38,11 @@
 		8EDF990F2BF0DFB9008E3085 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF990E2BF0DFB9008E3085 /* WebSocketManager.swift */; };
 		8EDF99122BF10542008E3085 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF99112BF10542008E3085 /* BarcodeScannerView.swift */; };
 		8EDF991E2BF10D98008E3085 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF991D2BF10D98008E3085 /* ScannerVC.swift */; };
+		8EDF99222BF1132F008E3085 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF99212BF1132F008E3085 /* AppetizerTabView.swift */; };
+		8EDF99242BF11370008E3085 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF99232BF11370008E3085 /* AppetizerListView.swift */; };
+		8EDF99262BF113E5008E3085 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF99252BF113E5008E3085 /* AccountView.swift */; };
+		8EDF99282BF11438008E3085 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF99272BF11438008E3085 /* OrderView.swift */; };
+		8EDF992B2BF11A20008E3085 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF992A2BF11A20008E3085 /* Appetizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +51,9 @@
 		8E3ECFF62BEDE7DB005C4D7F /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		8E3ECFF82BEDE7DD005C4D7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E3ECFFB2BEDE7DD005C4D7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E9D49AF2BF8FF9900996B6C /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		8E9D49B12BF8FFA100996B6C /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
+		8E9D49B62BF9195000996B6C /* Practice-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Practice-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8EDF98B12BEDFCD2008E3085 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		8EDF98B42BEF74FC008E3085 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		8EDF98B62BEF76B1008E3085 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
@@ -67,6 +78,11 @@
 		8EDF990E2BF0DFB9008E3085 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
 		8EDF99112BF10542008E3085 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
 		8EDF991D2BF10D98008E3085 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		8EDF99212BF1132F008E3085 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
+		8EDF99232BF11370008E3085 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
+		8EDF99252BF113E5008E3085 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		8EDF99272BF11438008E3085 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		8EDF992A2BF11A20008E3085 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9D49B52BF8FFD800996B6C /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +116,8 @@
 		8E3ECFF32BEDE7DB005C4D7F /* Practice_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8E9D49B62BF9195000996B6C /* Practice-SwiftUI-Info.plist */,
+				8E9D49AE2BF8FF7300996B6C /* Counter */,
 				8EDF991F2BF11229008E3085 /* Appetizers */,
 				8EDF99102BF10529008E3085 /* BarcodeScanner */,
 				8EDF98F12BF0D5EE008E3085 /* Coin */,
@@ -118,6 +137,15 @@
 				8E3ECFFB2BEDE7DD005C4D7F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8E9D49AE2BF8FF7300996B6C /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				8E9D49AF2BF8FF9900996B6C /* CounterView.swift */,
+				8E9D49B12BF8FFA100996B6C /* CounterFeature.swift */,
+			);
+			path = Counter;
 			sourceTree = "<group>";
 		};
 		8EDF98B02BEDFC4A008E3085 /* Practice1 */ = {
@@ -327,8 +355,29 @@
 		8EDF991F2BF11229008E3085 /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				8EDF99292BF11A17008E3085 /* Model */,
+				8EDF99202BF11322008E3085 /* Scenes */,
 			);
 			path = Appetizers;
+			sourceTree = "<group>";
+		};
+		8EDF99202BF11322008E3085 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8EDF99212BF1132F008E3085 /* AppetizerTabView.swift */,
+				8EDF99232BF11370008E3085 /* AppetizerListView.swift */,
+				8EDF99252BF113E5008E3085 /* AccountView.swift */,
+				8EDF99272BF11438008E3085 /* OrderView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8EDF99292BF11A17008E3085 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EDF992A2BF11A20008E3085 /* Appetizer.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +396,9 @@
 			dependencies = (
 			);
 			name = Practice_SwiftUI;
+			packageProductDependencies = (
+				8E9D49B42BF8FFD800996B6C /* ComposableArchitecture */,
+			);
 			productName = Practice_SwiftUI;
 			productReference = 8E3ECFF12BEDE7DB005C4D7F /* Practice_SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -375,6 +427,9 @@
 				Base,
 			);
 			mainGroup = 8E3ECFE82BEDE7DB005C4D7F;
+			packageReferences = (
+				8E9D49B32BF8FFD800996B6C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 8E3ECFF22BEDE7DB005C4D7F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -402,12 +457,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EDF99002BF0DA17008E3085 /* NetworkManager.swift in Sources */,
+				8EDF99242BF11370008E3085 /* AppetizerListView.swift in Sources */,
+				8EDF992B2BF11A20008E3085 /* Appetizer.swift in Sources */,
 				8EDF98BB2BEF7FFE008E3085 /* AFButton.swift in Sources */,
 				8EDF98C12BEF9F31008E3085 /* FrameworkTiteView.swift in Sources */,
 				8EDF98FA2BF0D6C6008E3085 /* CoinViewModel.swift in Sources */,
+				8E9D49B22BF8FFA100996B6C /* CounterFeature.swift in Sources */,
 				8EDF98BF2BEF9C2F008E3085 /* SafariView.swift in Sources */,
+				8E9D49B02BF8FF9900996B6C /* CounterView.swift in Sources */,
+				8EDF99262BF113E5008E3085 /* AccountView.swift in Sources */,
 				8EDF99032BF0DE21008E3085 /* OrderBook.swift in Sources */,
 				8EDF98B72BEF76B1008E3085 /* FrameworkGridView.swift in Sources */,
+				8EDF99282BF11438008E3085 /* OrderView.swift in Sources */,
 				8EDF990A2BF0DE78008E3085 /* ChartView.swift in Sources */,
 				8EDF990C2BF0DE8B008E3085 /* ChartViewModel.swift in Sources */,
 				8EDF98EF2BEFAF97008E3085 /* FrameworkListDetailView.swift in Sources */,
@@ -425,6 +486,7 @@
 				8EDF98ED2BEFAE5D008E3085 /* FrameworkListTitleView.swift in Sources */,
 				8EDF98F72BF0D694008E3085 /* CoinView.swift in Sources */,
 				8EDF98E62BEFAD2A008E3085 /* FrameworkListView.swift in Sources */,
+				8EDF99222BF1132F008E3085 /* AppetizerTabView.swift in Sources */,
 				8EDF98F42BF0D639008E3085 /* Market.swift in Sources */,
 				8EDF99062BF0DE47008E3085 /* APIError.swift in Sources */,
 			);
@@ -563,7 +625,7 @@
 				DEVELOPMENT_TEAM = N63SBJ4UPF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "Practice-SwiftUI-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "바코드 스캐너를 사용하기 위해 카메라 접근 권한이 필요합니다";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -598,7 +660,7 @@
 				DEVELOPMENT_TEAM = N63SBJ4UPF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "Practice-SwiftUI-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "바코드 스캐너를 사용하기 위해 카메라 접근 권한이 필요합니다";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -644,6 +706,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8E9D49B32BF8FFD800996B6C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8E9D49B42BF8FFD800996B6C /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E9D49B32BF8FFD800996B6C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8E3ECFE92BEDE7DB005C4D7F /* Project object */;
 }
