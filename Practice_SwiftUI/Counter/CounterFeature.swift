@@ -17,13 +17,14 @@ struct CounterFeature {
         var isLoading = false
         var fact: String?
         var isTimerRunning = false
+        var errorMessage: String?
     }
     
     enum Action {
         case incrementButtonTapped
         case decrementButtonTapped
         case factButtonTapped
-        case factResponse(String)
+        case factResponse(Result<String, NetworkError>)
         case timerButtonTapped
         case timerTick
     }
@@ -41,16 +42,19 @@ struct CounterFeature {
             case .incrementButtonTapped:
                 state.count += 1
                 state.fact = nil
+                state.errorMessage = nil
                 return .none
                 
             case .decrementButtonTapped:
                 state.count -= 1
                 state.fact = nil
+                state.errorMessage = nil
                 return .none
                 
             case .factButtonTapped:
                 // 여기는 동기
                 state.fact = nil
+                state.errorMessage = nil
                 state.isLoading = true
             
                 /*
@@ -76,13 +80,37 @@ struct CounterFeature {
 //                    await send(.factResponse(response))
                     
 //                    리팩토링 2
-                    try await send(.factResponse(numberFact.fetch(count)))
+//                    try await send(.factResponse(numberFact.fetch(count)))
+                    do {
+                        let fact = try await numberFact.fetch(count)
+                        await send(.factResponse(.success(fact)))
+                    } catch {
+                        if let networkError = error as? NetworkError {
+                            await send(.factResponse(.failure(networkError)))
+                        } else {
+                            await send(.factResponse(.failure(.requestFailed(error))))
+                        }
+                    }
                 }
                 
-            case let .factResponse(fact):
+            // result Type 은 내가 선택해서 성공/실패 케이스로 따로 받을 수 있네??
+            case let .factResponse(.success(fact)):
                 state.fact = fact
                 state.isLoading = false
                 return .none
+                
+            case let .factResponse(.failure(networkError)):
+                state.isLoading = false
+                switch networkError {
+                case .timeout:
+                    print("????")
+                    state.errorMessage = "The request timed out"
+                default:
+                    print("skdi?")
+                    state.errorMessage = networkError.localizedDescription
+                }
+                return .none
+                
             case .timerButtonTapped:
                 state.isTimerRunning.toggle()
                 
@@ -106,6 +134,7 @@ struct CounterFeature {
             case .timerTick:
                 state.count += 1
                 state.fact = nil
+                state.errorMessage = nil
                 return .none
             }
         }
