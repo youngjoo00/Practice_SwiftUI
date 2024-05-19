@@ -14,6 +14,7 @@
 		8E9D49B02BF8FF9900996B6C /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49AF2BF8FF9900996B6C /* CounterView.swift */; };
 		8E9D49B22BF8FFA100996B6C /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49B12BF8FFA100996B6C /* CounterFeature.swift */; };
 		8E9D49B52BF8FFD800996B6C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9D49B42BF8FFD800996B6C /* ComposableArchitecture */; };
+		8E9D49BF2BF9D80400996B6C /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49BE2BF9D80400996B6C /* NumberFactClient.swift */; };
 		8EDF98B22BEDFCD2008E3085 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF98B12BEDFCD2008E3085 /* WeatherButton.swift */; };
 		8EDF98B52BEF74FC008E3085 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF98B42BEF74FC008E3085 /* Framework.swift */; };
 		8EDF98B72BEF76B1008E3085 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF98B62BEF76B1008E3085 /* FrameworkGridView.swift */; };
@@ -54,6 +55,7 @@
 		8E9D49AF2BF8FF9900996B6C /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		8E9D49B12BF8FFA100996B6C /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		8E9D49B62BF9195000996B6C /* Practice-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Practice-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8E9D49BE2BF9D80400996B6C /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 		8EDF98B12BEDFCD2008E3085 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		8EDF98B42BEF74FC008E3085 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		8EDF98B62BEF76B1008E3085 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				8E9D49AF2BF8FF9900996B6C /* CounterView.swift */,
 				8E9D49B12BF8FFA100996B6C /* CounterFeature.swift */,
+				8E9D49BE2BF9D80400996B6C /* NumberFactClient.swift */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				8EDF99002BF0DA17008E3085 /* NetworkManager.swift in Sources */,
 				8EDF99242BF11370008E3085 /* AppetizerListView.swift in Sources */,
 				8EDF992B2BF11A20008E3085 /* Appetizer.swift in Sources */,
+				8E9D49BF2BF9D80400996B6C /* NumberFactClient.swift in Sources */,
 				8EDF98BB2BEF7FFE008E3085 /* AFButton.swift in Sources */,
 				8EDF98C12BEF9F31008E3085 /* FrameworkTiteView.swift in Sources */,
 				8EDF98FA2BF0D6C6008E3085 /* CoinViewModel.swift in Sources */,

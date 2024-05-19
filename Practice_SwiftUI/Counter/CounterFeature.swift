@@ -33,6 +33,7 @@ struct CounterFeature {
     }
     
     @Dependency(\.continuousClock) var clock
+    @Dependency(\.numberFact) var numberFact
     
     var body: some ReducerOf<Self> {
         Reduce { state, action in
@@ -66,9 +67,16 @@ struct CounterFeature {
                  */
                 return .run { [count = state.count] send in
                     // 클로저는 애초에 비동기로 작동해서 여기서 사용이 가능한거였음
-                    let (data, _) = try await URLSession.shared.data(from: URL(string: "http://numbersapi.com/\(count)")!)
-                    let fact = String(decoding: data, as: UTF8.self)
-                    await send(.factResponse(fact)) // send 는 반드시 await 키워드를 붙여서 액션 로직이 마치면 다시 여기로 돌아오게끔 해야함
+//                    let (data, _) = try await URLSession.shared.data(from: URL(string: "http://numbersapi.com/\(count)")!)
+//                    let fact = String(decoding: data, as: UTF8.self)
+//                    await send(.factResponse(fact)) // send 는 반드시 await 키워드를 붙여서 액션 로직이 마치면 다시 여기로 돌아오게끔 해야함
+                    
+//                    리팩토링 1
+//                    let response = try await numberFact.fetch(count)
+//                    await send(.factResponse(response))
+                    
+//                    리팩토링 2
+                    try await send(.factResponse(numberFact.fetch(count)))
                 }
                 
             case let .factResponse(fact):
