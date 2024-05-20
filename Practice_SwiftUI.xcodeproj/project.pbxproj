@@ -12,9 +12,11 @@
 		8E3ECFF92BEDE7DD005C4D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3ECFF82BEDE7DD005C4D7F /* Assets.xcassets */; };
 		8E3ECFFC2BEDE7DD005C4D7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3ECFFB2BEDE7DD005C4D7F /* Preview Assets.xcassets */; };
 		8E9D49B02BF8FF9900996B6C /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49AF2BF8FF9900996B6C /* CounterView.swift */; };
-		8E9D49B22BF8FFA100996B6C /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49B12BF8FFA100996B6C /* CounterFeature.swift */; };
+		8E9D49B22BF8FFA100996B6C /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49B12BF8FFA100996B6C /* CounterReducer.swift */; };
 		8E9D49B52BF8FFD800996B6C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8E9D49B42BF8FFD800996B6C /* ComposableArchitecture */; };
 		8E9D49BF2BF9D80400996B6C /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49BE2BF9D80400996B6C /* NumberFactClient.swift */; };
+		8E9D49C12BFB4A7200996B6C /* CounterMainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49C02BFB4A7200996B6C /* CounterMainTabView.swift */; };
+		8E9D49C32BFB4C4200996B6C /* CounterAppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49C22BFB4C4200996B6C /* CounterAppReducer.swift */; };
 		8EDF98B22BEDFCD2008E3085 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF98B12BEDFCD2008E3085 /* WeatherButton.swift */; };
 		8EDF98B52BEF74FC008E3085 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF98B42BEF74FC008E3085 /* Framework.swift */; };
 		8EDF98B72BEF76B1008E3085 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF98B62BEF76B1008E3085 /* FrameworkGridView.swift */; };
@@ -53,9 +55,11 @@
 		8E3ECFF82BEDE7DD005C4D7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E3ECFFB2BEDE7DD005C4D7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8E9D49AF2BF8FF9900996B6C /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
-		8E9D49B12BF8FFA100996B6C /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
+		8E9D49B12BF8FFA100996B6C /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		8E9D49B62BF9195000996B6C /* Practice-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Practice-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8E9D49BE2BF9D80400996B6C /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
+		8E9D49C02BFB4A7200996B6C /* CounterMainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterMainTabView.swift; sourceTree = "<group>"; };
+		8E9D49C22BFB4C4200996B6C /* CounterAppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAppReducer.swift; sourceTree = "<group>"; };
 		8EDF98B12BEDFCD2008E3085 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		8EDF98B42BEF74FC008E3085 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		8EDF98B62BEF76B1008E3085 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
@@ -144,9 +148,11 @@
 		8E9D49AE2BF8FF7300996B6C /* Counter */ = {
 			isa = PBXGroup;
 			children = (
+				8E9D49C02BFB4A7200996B6C /* CounterMainTabView.swift */,
 				8E9D49AF2BF8FF9900996B6C /* CounterView.swift */,
-				8E9D49B12BF8FFA100996B6C /* CounterFeature.swift */,
+				8E9D49B12BF8FFA100996B6C /* CounterReducer.swift */,
 				8E9D49BE2BF9D80400996B6C /* NumberFactClient.swift */,
+				8E9D49C22BFB4C4200996B6C /* CounterAppReducer.swift */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -462,11 +468,12 @@
 				8EDF99002BF0DA17008E3085 /* NetworkManager.swift in Sources */,
 				8EDF99242BF11370008E3085 /* AppetizerListView.swift in Sources */,
 				8EDF992B2BF11A20008E3085 /* Appetizer.swift in Sources */,
+				8E9D49C12BFB4A7200996B6C /* CounterMainTabView.swift in Sources */,
 				8E9D49BF2BF9D80400996B6C /* NumberFactClient.swift in Sources */,
 				8EDF98BB2BEF7FFE008E3085 /* AFButton.swift in Sources */,
 				8EDF98C12BEF9F31008E3085 /* FrameworkTiteView.swift in Sources */,
 				8EDF98FA2BF0D6C6008E3085 /* CoinViewModel.swift in Sources */,
-				8E9D49B22BF8FFA100996B6C /* CounterFeature.swift in Sources */,
+				8E9D49B22BF8FFA100996B6C /* CounterReducer.swift in Sources */,
 				8EDF98BF2BEF9C2F008E3085 /* SafariView.swift in Sources */,
 				8E9D49B02BF8FF9900996B6C /* CounterView.swift in Sources */,
 				8EDF99262BF113E5008E3085 /* AccountView.swift in Sources */,
@@ -491,6 +498,7 @@
 				8EDF98F72BF0D694008E3085 /* CoinView.swift in Sources */,
 				8EDF98E62BEFAD2A008E3085 /* FrameworkListView.swift in Sources */,
 				8EDF99222BF1132F008E3085 /* AppetizerTabView.swift in Sources */,
+				8E9D49C32BFB4C4200996B6C /* CounterAppReducer.swift in Sources */,
 				8EDF98F42BF0D639008E3085 /* Market.swift in Sources */,
 				8EDF99062BF0DE47008E3085 /* APIError.swift in Sources */,
 			);

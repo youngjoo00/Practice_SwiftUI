@@ -10,7 +10,7 @@ import ComposableArchitecture
 
 struct CounterView: View {
     
-    let store: StoreOf<CounterFeature>
+    let store: StoreOf<CounterReducer>
     
     var body: some View {
         VStack {
@@ -64,8 +64,8 @@ struct CounterView: View {
 
 #Preview {
     CounterView(
-        store: Store(initialState: CounterFeature.State()) {
-            CounterFeature()
+        store: Store(initialState: CounterReducer.State()) {
+            CounterReducer()
         }
     )
 }

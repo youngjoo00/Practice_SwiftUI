@@ -9,7 +9,7 @@ import Foundation
 import ComposableArchitecture
 
 @Reducer
-struct CounterFeature {
+struct CounterReducer {
     
     @ObservableState
     struct State {
@@ -103,10 +103,8 @@ struct CounterFeature {
                 state.isLoading = false
                 switch networkError {
                 case .timeout:
-                    print("????")
                     state.errorMessage = "The request timed out"
                 default:
-                    print("skdi?")
                     state.errorMessage = networkError.localizedDescription
                 }
                 return .none
