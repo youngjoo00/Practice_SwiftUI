@@ -17,6 +17,11 @@
 		8E9D49BF2BF9D80400996B6C /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49BE2BF9D80400996B6C /* NumberFactClient.swift */; };
 		8E9D49C12BFB4A7200996B6C /* CounterMainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49C02BFB4A7200996B6C /* CounterMainTabView.swift */; };
 		8E9D49C32BFB4C4200996B6C /* CounterAppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49C22BFB4C4200996B6C /* CounterAppReducer.swift */; };
+		8E9D49C62BFB795D00996B6C /* ContactsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49C52BFB795D00996B6C /* ContactsReducer.swift */; };
+		8E9D49C82BFB79A400996B6C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49C72BFB79A400996B6C /* Contact.swift */; };
+		8E9D49CA2BFB7B1E00996B6C /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49C92BFB7B1E00996B6C /* ContactsView.swift */; };
+		8E9D49CC2BFB81DA00996B6C /* AddContactReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49CB2BFB81DA00996B6C /* AddContactReducer.swift */; };
+		8E9D49D12BFB82EC00996B6C /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D49D02BFB82EC00996B6C /* AddContactView.swift */; };
 		8EDF98B22BEDFCD2008E3085 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF98B12BEDFCD2008E3085 /* WeatherButton.swift */; };
 		8EDF98B52BEF74FC008E3085 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF98B42BEF74FC008E3085 /* Framework.swift */; };
 		8EDF98B72BEF76B1008E3085 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF98B62BEF76B1008E3085 /* FrameworkGridView.swift */; };
@@ -60,6 +65,11 @@
 		8E9D49BE2BF9D80400996B6C /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 		8E9D49C02BFB4A7200996B6C /* CounterMainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterMainTabView.swift; sourceTree = "<group>"; };
 		8E9D49C22BFB4C4200996B6C /* CounterAppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAppReducer.swift; sourceTree = "<group>"; };
+		8E9D49C52BFB795D00996B6C /* ContactsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsReducer.swift; sourceTree = "<group>"; };
+		8E9D49C72BFB79A400996B6C /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		8E9D49C92BFB7B1E00996B6C /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		8E9D49CB2BFB81DA00996B6C /* AddContactReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactReducer.swift; sourceTree = "<group>"; };
+		8E9D49D02BFB82EC00996B6C /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 		8EDF98B12BEDFCD2008E3085 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		8EDF98B42BEF74FC008E3085 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		8EDF98B62BEF76B1008E3085 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
@@ -123,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				8E9D49B62BF9195000996B6C /* Practice-SwiftUI-Info.plist */,
+				8E9D49C42BFB793D00996B6C /* Contacts */,
 				8E9D49AE2BF8FF7300996B6C /* Counter */,
 				8EDF991F2BF11229008E3085 /* Appetizers */,
 				8EDF99102BF10529008E3085 /* BarcodeScanner */,
@@ -155,6 +166,42 @@
 				8E9D49C22BFB4C4200996B6C /* CounterAppReducer.swift */,
 			);
 			path = Counter;
+			sourceTree = "<group>";
+		};
+		8E9D49C42BFB793D00996B6C /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				8E9D49CE2BFB82BC00996B6C /* Contacts */,
+				8E9D49CF2BFB82C400996B6C /* AddContact */,
+				8E9D49CD2BFB81E400996B6C /* Model */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		8E9D49CD2BFB81E400996B6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E9D49C72BFB79A400996B6C /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E9D49CE2BFB82BC00996B6C /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				8E9D49C92BFB7B1E00996B6C /* ContactsView.swift */,
+				8E9D49C52BFB795D00996B6C /* ContactsReducer.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		8E9D49CF2BFB82C400996B6C /* AddContact */ = {
+			isa = PBXGroup;
+			children = (
+				8E9D49D02BFB82EC00996B6C /* AddContactView.swift */,
+				8E9D49CB2BFB81DA00996B6C /* AddContactReducer.swift */,
+			);
+			path = AddContact;
 			sourceTree = "<group>";
 		};
 		8EDF98B02BEDFC4A008E3085 /* Practice1 */ = {
@@ -469,9 +516,13 @@
 				8EDF99242BF11370008E3085 /* AppetizerListView.swift in Sources */,
 				8EDF992B2BF11A20008E3085 /* Appetizer.swift in Sources */,
 				8E9D49C12BFB4A7200996B6C /* CounterMainTabView.swift in Sources */,
+				8E9D49C82BFB79A400996B6C /* Contact.swift in Sources */,
 				8E9D49BF2BF9D80400996B6C /* NumberFactClient.swift in Sources */,
+				8E9D49C62BFB795D00996B6C /* ContactsReducer.swift in Sources */,
 				8EDF98BB2BEF7FFE008E3085 /* AFButton.swift in Sources */,
 				8EDF98C12BEF9F31008E3085 /* FrameworkTiteView.swift in Sources */,
+				8E9D49CC2BFB81DA00996B6C /* AddContactReducer.swift in Sources */,
+				8E9D49D12BFB82EC00996B6C /* AddContactView.swift in Sources */,
 				8EDF98FA2BF0D6C6008E3085 /* CoinViewModel.swift in Sources */,
 				8E9D49B22BF8FFA100996B6C /* CounterReducer.swift in Sources */,
 				8EDF98BF2BEF9C2F008E3085 /* SafariView.swift in Sources */,
@@ -499,6 +550,7 @@
 				8EDF98E62BEFAD2A008E3085 /* FrameworkListView.swift in Sources */,
 				8EDF99222BF1132F008E3085 /* AppetizerTabView.swift in Sources */,
 				8E9D49C32BFB4C4200996B6C /* CounterAppReducer.swift in Sources */,
+				8E9D49CA2BFB7B1E00996B6C /* ContactsView.swift in Sources */,
 				8EDF98F42BF0D639008E3085 /* Market.swift in Sources */,
 				8EDF99062BF0DE47008E3085 /* APIError.swift in Sources */,
 			);
